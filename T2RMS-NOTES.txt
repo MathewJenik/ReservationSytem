@@ -1,0 +1,17 @@
+
+
+---Database:
+Connection (local)
+Data Source=localhost;Initial Catalog=T2RMSWS;Integrated Security=true;
+Connection (remote)
+Server=tcp:t2s12020.database.windows.net,1433;Initial Catalog=T2RMSWS;Persist Security Info=False;User ID=madadmin;Password={mad!@123};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+
+Server: t2s12020.database.windows.net
+
+Admin Account:
+U: madadmin
+P: mad!@123
+
+
+
+https://t2s120.blob.core.windows.net/t2s120/T2RMSWS-2020-3-12-15-2.bacpac
