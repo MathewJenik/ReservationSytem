@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -27,6 +28,7 @@ namespace T2RMSWS.Areas.Identity.Pages.Account
 
         //add field for context
         private readonly ApplicationDbContext _context;
+        ///private readonly IdentityDbContext<IdentityUser> _context;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -34,7 +36,9 @@ namespace T2RMSWS.Areas.Identity.Pages.Account
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             ApplicationDbContext context //update constructor to include context
+            //IdentityDbContext<IdentityUser> context
 )
+
         {
             _userManager = userManager;
             _signInManager = signInManager;
